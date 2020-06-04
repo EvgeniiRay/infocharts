@@ -1,0 +1,41 @@
+{
+  "name": "@jetbrains/infocharts",
+  "version": "1.0.0",
+  "description": "The set of charts based on React, TypeScript  and D3",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgeniiRay/infocharts.git"
+  },
+  "author": "Evgenii Ray",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^2.0.5",
+    "react-docgen-typescript": "^1.16.5",
+    "react-styleguidist": "^11.0.8",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "@types/d3-scale": "^2.2.0",
+    "@types/d3-selection": "^1.4.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "styleguidist server"
+  }
+}
