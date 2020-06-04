@@ -38,9 +38,8 @@ module.exports = {
     },
     {
       name: 'Charts',
-      components: 'lib/charts/*.js',
-      exampleMode: 'expand',
-      usageMode: 'expand'
+      components: '/src/charts/**/!(index).{tsx,ts}',
+      sectionDepth: 1,
     }
   ]
 }
