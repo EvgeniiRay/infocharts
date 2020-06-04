@@ -1,1 +1,1 @@
-export {default as ExampleComponent} from "./example/example";
+console.log("sdsd")

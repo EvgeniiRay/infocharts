@@ -1,6 +1,6 @@
 ## Example component code
 
-```javascript harmony
+```jsx
 <div>
   <ExampleComponent id={12}/>
 </div>

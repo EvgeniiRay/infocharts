@@ -1,12 +1,9 @@
-const cfg = require("./.eslintrc.js");
+const webpackConfig = require("./styleguide.webpack.js");
 const lib = require('./package.json');
 
 module.exports = {
-  components: 'src/charts/**/[A-Z]*.js',
-  getComponentPathLine(componentPath) {
-    return `@jetbrains/infocharts`;
-  },
-  webpackConfig: require('./styleguide.webpack.js'),
+  skipComponentsWithoutExample: true,
+  webpackConfig,
   pagePerSection: true,
   version: lib.version,
   styles: {
@@ -17,7 +14,7 @@ module.exports = {
       }
     }
   },
-  propsParser: require('react-docgen-typescript').withDefaultConfig('./tsconfig.json', [cfg.parserOptions]).parse,
+  propsParser: require('react-docgen-typescript').parse,
   sections: [
     {
       name: 'Introduction',
@@ -38,7 +35,7 @@ module.exports = {
     },
     {
       name: 'Charts',
-      components: '/src/charts/**/!(index).{tsx,ts}',
+      components: 'src/charts/**/!(index).{tsx,ts}',
       sectionDepth: 1,
     }
   ]
