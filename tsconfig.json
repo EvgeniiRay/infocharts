@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true,     // generate declration .d.ts files for us
+    "declarationDir": "lib", // location of generated .d.ts files
+    "outDir": "lib",         // location of compiled .js files
+    "rootDir": "src",        // location of you source code
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "lib": [                 // Include ESNext features and DOM API
+      "dom",
+      "esnext"
+    ],
+    "esModuleInterop": true,              // Enable Module Interop. this allow
+    "allowSyntheticDefaultImports": true, // us to replace import * smth with
+    "jsx": "react"                        // Tell compiler to support tsx files
+  },
+  "include": [
+    "src/**/*"               // Specify directly what we need to compile
+  ]
+}
